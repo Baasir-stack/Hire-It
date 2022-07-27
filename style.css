@@ -1,0 +1,271 @@
+body{
+    font-family: sans-serif;
+}
+
+#header .fixed-top {
+  box-shadow: 0 0.125rem 0.675rem rgb(0 0 0 / 5%);
+}
+
+#header .navbar-nav .nav-item .nav-link {
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+}
+
+#header .navbar-nav .nav-item .nav-link:hover,
+#header .navbar-nav .nav-item .nav-link:active {
+  color: #FBD232;
+}
+
+.navbar-toggler-icon {
+  background-color: #FBD232;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.home .home-banner-1,
+.home .home-banner-2,
+.home .home-banner-3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90% center;
+  min-height: 550px;
+  position: relative;
+}
+
+.home .home-banner-1 {
+  background-image: url("cbg.jpg");
+  background-blend-mode: overlay;
+  background-color: #000000db;
+}
+
+.home .home-banner-2 {
+  background-image: url("cbg.jpg");
+  background-blend-mode: overlay;
+  background-color: #000000db;
+}
+
+.home .home-banner-3 {
+  background-image: url("cbg.jpg");
+  background-blend-mode: overlay;
+  background-color: #000000db;
+}
+
+.home .home-banner .home-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-110%, -50%);
+}
+
+.home .home-banner .home-banner-text h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.home .home-banner .home-banner-text p {
+  color: white;
+}
+
+.home .carousel-indicators [data-bs-target] {
+  background-color: #FBD232;
+  width: 2.5rem;
+  height: 0.313rem;
+}
+
+/* .home .carousel-control-next-icon,
+.home .carousel-control-next-prev {
+  background: transparent;
+} */
+
+.home .slider-icon {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #FBD232;
+}
+
+.about-section .card,
+.about-section .card img {
+  border-radius: 0.625rem;
+}
+.about-section .text-sec {
+  padding-left: 2rem;
+}
+
+.food-type {
+  padding-top: 3.25rem;
+}
+.food-type ul li {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 32px;
+  position: relative;
+  margin-left: 30px;
+}
+.food-type ul li::before {
+  position: absolute;
+  left: -2.1875rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+#whoweare {
+    background-color: #000000de;
+    background-image: url('bbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+    background-blend-mode: overlay;
+}
+
+#partner{
+    background-color: #000000c5;
+    background-image: url('pbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.partnericon::before {
+    font-size: 50px;
+    padding: 10px;
+    margin-left: 40%;
+    background-color: #FBD232;
+    border-radius: 50%;
+}
+
+
+#footer {
+  background-color: #000000de;
+  background-image: url('footerbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+.footer-link:hover {
+  color: #FBD232;
+}
+
+
+/* RESPONSVICE BEHAVIOURS */
+
+@media (max-width: 1030px) {
+  /* Home CSS */
+  .home .home-banner-1,
+  .home .home-banner-2 {
+    background-position: 65% center;
+    min-height: 550px;
+  }
+  .home .home-banner .home-banner-text {
+    transform: translate(-80%, -50%);
+  }
+
+  /* Offer CSS */
+  .offers .offer-box .offer-info .heading-bigger {
+    font-size: 3rem;
+  }
+
+  /* Special CSS */
+  .special .countdown-container .countdown-counter li {
+    padding: 1.5rem 1rem;
+  }
+}
+@media (max-width: 991px) {
+  /* Home CSS */
+  .home .home-banner .home-banner-text {
+    transform: translate(-66%, -50%);
+  }
+
+  /* Special CSS */
+  .special .countdown-container {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+
+  /* Testimonial CSS */
+  .testimonial .carousel-control-prev {
+    left: -1.75rem;
+  }
+  .testimonial .carousel-control-next {
+    right: -1.75rem;
+  }
+}
+@media (max-width: 767px) {
+  /* Home CSS */
+  .home .home-banner-1,
+  .home .home-banner-2 {
+    background-position: 50% center;
+    min-height: 450px;
+  }
+  .home .home-banner .home-banner-text {
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .home .home-banner .home-banner-text h1 {
+    font-size: 3rem;
+  }
+  .home .home-banner .home-banner-text h2 {
+    font-size: 1.2rem;
+  }
+  .home .home-banner .home-banner-text .btn-danger {
+    padding: 0.5rem 1.5rem;
+  }
+  .home .slider-icon {
+    font-size: 2rem;
+  }
+
+  /* Product CSS */
+  .products .up_to_content h2 {
+    font-size: 0.75rem;
+  }
+}
+
+/* Product CSS */
+.products .up_to_content h2 {
+  font-size: 0.75rem;
+}
+
+/* Special CSS */
+.special {
+  padding: 4rem 0;
+}
+.special .countdown-container .countdown-counter li {
+  padding: 1rem;
+  width: 20%;
+}
+
+/* Testimonial CSS */
+.testimonial .testimonial-wrapper {
+  padding: 1rem;
+}
+.testimonial .carousel-control-prev,
+.testimonial .carousel-control-next {
+  display: none;
+}
+
+@media (max-width: 330px) {
+  /* Home CSS */
+  .home .home-banner .home-banner-text h2 {
+    font-size: 1rem;
+  }
+
+  /* Product CSS */
+  .products .up_to_content h2 {
+    font-size: 0.625rem;
+  }
+}
